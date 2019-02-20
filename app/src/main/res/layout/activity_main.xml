@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <TextView
+            android:id="@+id/txtrandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="50dp"/>
+
+        <TextView
+            android:id="@+id/txtnumerosum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textSize="100dp" />
+        <TextView
+            android:id="@+id/txtmensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center|bottom"
+            android:textSize="50dp"/>
+    </FrameLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="5"
+        android:rowCount="1">
+        <Button android:layout_column="1"
+            style="@style/AppTheme.BotonMina"
+            android:id="@+id/btn1"/>
+        <Button android:layout_column="2"
+            style="@style/AppTheme.BotonMina"
+            android:id="@+id/btn2"/>
+        <Button android:layout_column="3"
+            style="@style/AppTheme.BotonMina"
+            android:id="@+id/btn3"/>
+        <Button android:layout_column="4"
+            style="@style/AppTheme.BotonMina"
+            android:id="@+id/btn4"/>
+        <Button android:layout_column="0"
+            style="@style/AppTheme.BotonMina"
+            android:id="@+id/btn5"/>
+
+    </GridLayout>
+    <Button
+        android:id="@+id/btnNuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Juego"/>
+
+
+
+</LinearLayout>
